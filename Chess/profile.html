@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="profile.css">
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="profile.js"></script>
+    <script type="text/javascript" src="outload.js"></script>
+    <script type="text/javascript" src="getFriend.js"></script>
+    <script type="text/javascript" src="getAvatar.js"></script>
+    <script type="text/javascript" src="online.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="menu">
+        <button type="submit">Создать игру</button>
+        <button type="submit">Одиночная игра</button>
+        <button type="submit" onclick="window.location.href='main.html'">На главную</button>
+
+        <button id="outload">Выход</button>
+    </div>
+</div>
+
+    <div class="log">
+        <button class = "create" onclick="window.location.href='createprofile.html'">Редактировать профиль</button>
+        <center><h1>Профиль игрока <div class = "imya"></div><h4><div class = "online"></div></h4></h1></center>
+        <div class = "proftext">О себе: <div class = "osebe"></div></div>
+        <div class = "proftext2">Регион - <text class = "country"></text></div>
+
+        <table class = "statistic">
+            <tr class = "statistic">
+                <th class = "stats">Кол-во сыгранных партий</th>
+                <th class = "stats">Побед</th>
+                <th class = "stats">Поражений</th>
+                <th class = "stats">Доля побед</th>
+                <th class = "stats">Кол-во рейтинга</th>
+            </tr>
+            <tr>
+                <td class = "count"></td>
+                <td class = "wons"></td>
+                <td class = "loss"></td>
+                <td class = "procent"></td>
+                <td class = "score"></td>
+            </tr>
+        </table>
+
+    </div>  
+
+    <div class = "listFriend">
+        <center><h2>Список друзей</h2></center>
+        <table class = "table">
+            <tr class="type">
+            </tr>
+        </table> 
+        <table id = "structure">
+            <tr class="list">
+                <td class="friends"></td>
+            </tr>
+        </table> 
+        <button class = "addfriends" onclick="window.location.href='visitProfile.html'">Добавить друзей</button>
+    </div>
+
+    <div class = "avatar">
+        <h4>Фото профиля</h4>
+        <div class="foto"></div>
+    </div>
+
+    <div class = "games">
+        <left><h3>Последняя игра</h3></left>
+        <table class = "statistic">
+            <tr class = "statistic">
+                <th class = "stats">Дата</th>
+                <th class = "stats">Сторона</th>
+                <th class = "stats">Результат</th>
+            </tr>
+            <tr>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация на сайте</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="message.js"></script>
+    <script type="text/javascript" src="outload.js"></script>
+    <script type="text/javascript" src="AddMessage.js"></script>
+    <script type="text/javascript" src="rating.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+</head>
+<body>
+<audio src="muzik.mp3" autoplay loop></audio>        
+<div class="header">
+    <div class="menu">
+        <button type="submit">Создать игру</button>
+        <button type="submit">Одиночная игра</button>
+        <button type="submit" onclick="window.location.href='profile.html'">Профиль</button>
+        <button id="outload">Выход</button>
+    </div>
+</div>
+<div class="title">
+    <div class="profil">
+        <center><h1>Профиль игрока</h1></center>
+        <table>
+            <td>
+                <ul>Имя</ul>
+                <ul >Количество очков</ul>
+            </td>     
+            <td>
+                <ul class = "imya"></ul>
+                <ul class = "score"></ul>
+            </td>  
+        </table>
+        </div>
+    </div>  
+</div>
+ <div class="foter">
+     <div class="gamelist">
+        <div class="games">
+            <center><h1>Список игр</h1></center>
+            <div class="scroll">
+                <div class="game">Комната игрока Вова <button>войти</button></div>
+                <div class="game">Комната игрока Вова <button>войти</button></div>
+                <div class="game">Комната игрока Вова <button>войти</button></div>
+                <div class="game">Комната игрока Вова <button>войти</button></div>
+                <div class="game">Комната игрока Вова <button>войти</button></div>
+                <div class="game">Комната игрока Вова <button>войти</button></div>
+                <div class="game">Комната игрока Вова <button>войти</button></div>
+                <div class="game">Комната игрока Вова <button>войти</button></div>
+                <div class="game">Комната игрока Вова <button>войти</button></div>
+               
+            </div>
+        </div> 
+     </div>
+    <div class="log">
+        <center><h1>Таблица лидеров</h1></center>
+        <div class="scroll">
+            <table class = "table">
+                <tr class="type">
+                    <th>Имя игрока</th>
+                    <th>Очки</th>
+                    <th>Позиция в рейтинге</th>
+                </tr>
+            </table> 
+            <table id = "structure">
+                <tr class="list">
+                    <td class="name"></td>
+                    <td class="coin"></td>
+                    <td class="position"></td>
+                </tr>
+            </table> 
+        </div>
+    </div>  
+
+ </div>
+ <div class="messag-box">
+    <div class="message">
+        <center><h1>Общий чат</h1></center>
+        <div class="scroll">
+            <p class="messages" id="0"></p>
+            
+        </div>
+        
+            <input id="mes" type="text">
+            <button id="add_btn">Отправить</button>
+        
+    </div> 
+ </div>
+</body>
+</html>

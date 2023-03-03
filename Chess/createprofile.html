@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="profile.css">
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="profile.js"></script>
+    <script type="text/javascript" src="Osebe.js"></script>
+    <script type="text/javascript" src="outload.js"></script>
+    <script type="text/javascript" src="setAvatar.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="menu">
+        <button type="submit" onclick="window.location.href='profile.html'">Вернуться в профиль</button>
+
+        <button id="outload">Выход</button>
+    </div>
+</div>
+<div class="title">
+    
+</div>
+    <div class="log2">
+        <center><h1>Редактирование профиля игрока <div class = "imya"></div></h1></center>
+        <div class = "proftext">Расскажите о себе:
+            <form action="">
+                <input id="osebe" type="text">    
+            </form>
+        </div>
+            <label class = "proftext2">Выберите регион:</label>
+                <select id="country">
+
+                <option class = "proftext3"  value=Россия>Россия</option>
+                
+                <option class = "proftext3" value=Англия>Англия</option>
+                
+                <option class = "proftext3" value=Казахстан>Казахстан</option>
+                
+                </select>
+
+            <div class = "proftext2">Выберите аватар</div>
+            <button id = "avatar1"></button>
+            <button id = "avatar2"></button>
+            <button id = "avatar3"></button>
+            <button id = "avatar4"></button>
+            
+            <button id="save" onclick="window.location.href='profile.html'">Сохранить</button>
+    </div>  
+
+</body>
+</html>
